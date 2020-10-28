@@ -5,7 +5,7 @@ const User = require("./src/User.model");
 
 const PORT = 8080;
 
-app.get("/users", async (req, res) => {
+app.get("/", async (req, res) => {
   const users = await User.find();
 
   res.json(users);
